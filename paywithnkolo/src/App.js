@@ -17,9 +17,9 @@ function App() {
     <div className="App nk-bg-light p-5"> 
       <Routes>
         <Route path="/" Component={Landing} />
-        <Route exact path="/paywithnkolo/:id" Component={MakePayment} />
-        <Route exact path="/paywithnkolo/:id/pay" Component={PayingNumber} />
-        <Route exact path="/paywithnkolo/:id/paid" Component={PaymentSuccessful} />
+        <Route exact path="/paywithnkolo" Component={Landing} />
+        <Route path="/paywithnkolo/:shopid/invoice" Component={MakePayment} />
+        <Route exact path="/paywithnkolo/:shopid/invoice/paid" Component={PaymentSuccessful} />
       </Routes>
     </div>
   );
