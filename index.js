@@ -25,8 +25,8 @@ app.get("/paywithnkolo/:shopid/invoice",(req,res)=>{
      const invoiceNumber = req.query.invoice 
 })
 
-app.get("/", (req,res)=>{
-    res.render("landing page",express.static(path.join(__dirname,'paywithnkolo/build')))
+app.get("/nkolo", (req,res)=>{
+    //res.render("landing page",express.static(path.join(__dirname,'paywithnkolo/build')))
 })
 
 
