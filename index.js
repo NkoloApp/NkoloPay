@@ -14,19 +14,20 @@ app.use(bodyParser.json())
 
 
 
-app.use('/', express.static(path.join(__dirname,'paywithnkolo/build')))
+//app.use('/', express.static(path.join(__dirname,'paywithnkolo/build')))
 
-app.use('/paywithnkolo', express.static(path.join(__dirname,'paywithnkolo/build')))
-
-
-//when an invoice link is clicked
-app.use('/paywithnkolo/:shopid/invoice', express.static(path.join(__dirname,'paywithnkolo/build')))
+//app.use('/paywithnkolo', express.static(path.join(__dirname,'paywithnkolo/build')))
+ 
+//app.use('/paywithnkolo/:shopid/invoice', express.static(path.join(__dirname,'paywithnkolo/build')))
 
 app.get("/paywithnkolo/:shopid/invoice",(req,res)=>{
      const shopId = req.params.shopid; 
      const invoiceNumber = req.query.invoice 
 })
 
+app.get("/", (req,res)=>{
+    res.send("Hell API")
+})
 
 
 
