@@ -25,8 +25,8 @@ app.get("/paywithnkolo/:shopid/invoice",(req,res)=>{
      const invoiceNumber = req.query.invoice 
 })
 
-app.get("/paywithnkolo/:shopid/invoice/details", (req,res)=>{
-    res.send("Hell API")
+app.get("/", (req,res)=>{
+    res.render("landing page",express.static(path.join(__dirname,'paywithnkolo/build')))
 })
 
 
@@ -35,4 +35,5 @@ app.get("/paywithnkolo/:shopid/invoice/details", (req,res)=>{
 
 app.listen(SERVER_PORT, ()=>{
     console.log("App is listening on port: "+SERVER_PORT);  
+    console.log(path.join(__dirname,'paywithnkolo/build'))
 }); 
