@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+body {
+  background-color: rgb(243, 243, 243);
+  font-family: "Poppins", sans-serif;
+}
+
+.nk-bg-primary-dark {
+  background-color: #184248;
+}
+
+.nk-bg-primary {
+  background-color: #128C7E;
+}
+
+.nk-bg-primary-light {
+  background-color: #A3CACD;
+}
+.nk-bg-primary-light-trans {
+  background-color: #F0F6F7;
+}
+
+.nk-bg-accent {
+  background-color: #fcff6a;
+}
+
+.nk-bg-light {
+  background-color: rgb(186, 186, 186);
+}
+.nk-bg-white {
+  background-color: rgb(255, 255, 255);
+}
+.nk-bg-dark {
+  background-color: #000000; 
+}
+
+.nk-tx-light {
+  color: white;
+}
+
+.nk-tx-accent {
+  color: #fcff6a;
+}
+
+.nk-tx-primary {
+  color: #128c7e;
+}
+
+.nk-tx-primary-dark {
+  color: #184248;
+}
+.nk-tx-primary-light{
+  color: #A3CACD;
+}
+
+.nk-ft-heavy {
+  font-weight: 900;
+}
+
+.nk-ft-bold {
+  font-weight: 800;
+}
+
+.nk-ft-semibold {
+  font-weight: 700;
+}
+
+.nk-ft-medium {
+  font-weight: 500;
+}
+
+.nk-ft-regular {
+  font-weight: 400;
+}
+
+.nk-ft-light {
+  font-weight: 300;
+}
+
+.nk-ft-extralight {
+  font-weight: 200;
+}
+
+.nk-border-accent{
+  background-color: none;
+  border: 1px solid #fcff6a;
+}
+
+ 
+.container{
+  max-width: 70vw;
+}
+
+.loginButton{
+  max-width: fit-content;
+}
+
+
+.invoices{
+  min-height: 100vh;
+}
+
+
+.payment-page{
+  min-height: 100dvh;
+}
+
+ .inputcontainer{
+  background-color: #000000;
+  fill-opacity: 0.2;
+  border: 1px solid #fcff6a;
+ }
+
+ 
+
+
+ .line {
+   width: 60px;
+   height: 4px;
+   animation: spin 1.5s infinite ease-in-out;
+
+   &:nth-of-type(2) {
+     animation-delay: 0.1s;
+   }
+
+   &:nth-of-type(3) {
+     animation-delay: 0.2s;
+   }
+
+   &:nth-of-type(4) {
+     animation-delay: 0.3s;
+   }
+ }
+
+
+
+ @keyframes bouncy {
+   40% {
+     height: 40px;
+   }
+
+   50% {
+     transform: translate(0, 65px);
+     height: 34px;
+     border-radius: 20px;
+   }
+
+   65% {
+     height: 40px;
+   }
+ }
+
+ @keyframes push {
+   50% {
+     left: 56px;
+   }
+ }
+
+ @keyframes slide {
+   50% {
+     margin-top: 25px;
+   }
+ }
+
+ @keyframes pulse {
+   50% {
+     border-width: 30px;
+   }
+ }
+
+ @keyframes spin {
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ @keyframes cross {
+   50% {
+     margin-left: 60px;
+   }
+ }
