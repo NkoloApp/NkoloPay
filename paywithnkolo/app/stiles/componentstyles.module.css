@@ -1,0 +1,37 @@
+
+
+
+.searcForm{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #fcff6a;
+}
+
+.searchput{    
+        outline-width: 0px;
+        outline: none; 
+        background-color: none;
+}
+
+
+.homePage{
+    min-height: 100vh;
+}
+
+.morePage{
+    min-height: 100vh;
+}
+
+.feedbackTest{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-color: #EDF4F5;
+}
+.feedbackPeople{
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: #FEFFE1;
+}
+
